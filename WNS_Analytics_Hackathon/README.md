@@ -13,3 +13,13 @@ For above mentioned process, the final promotions are only announced after the e
 2. Label Encoding and OneHot Encoding for Categorical and Numerical Variables.
 3. Robust Scaling for all Variables with outliers.
 4. Eventually applied multiple models out of which CatBoost worked the best . Rest lead to overfitting and some lead to models which were not generalized .
+
+(Variable Analyses in the notebook with plots)
+
+<b> Improvements Possible And Findings on work </b>
+
+1. Instead of roughly filling Nulls , the same can be filled by predictions to make the dataset more rich .
+2. All the different models can give great F1 scores and Fbeta scores but dont eventually work well on test data. So that should be considered carefully.
+4. A pipeline for trying out different models with GridSearchCV is already tried out by me , however better selection of models can be done .
+3. Tree based models with controlled depths were tried out, so barring them , other models will work well .
+ 
